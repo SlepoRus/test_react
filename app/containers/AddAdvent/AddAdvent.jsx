@@ -97,8 +97,6 @@ class AddAvent extends React.PureComponent {
       validate('phone')
       return;
     }
-    this.setState({ error: '' });
-
     this.props.dispatch(boardCreate(this.state));
     this.setState(initialState);
   }
