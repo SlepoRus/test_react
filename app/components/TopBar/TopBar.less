@@ -1,0 +1,67 @@
+@import url('../../styles/colors.less');
+
+.add-form {
+  height:100%;
+  display:flex;
+
+  justify-content: flex-start;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  i {
+    color: @GRAY_TEXT;
+    font-size: 11px;
+  }
+  & > div {
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+
+  }
+  .add-button {
+    padding:10px;
+  }
+}
+button {
+  padding:12px;
+  background-color: @RED_PURE;
+  color:white;
+  font-weight: bold;
+  cursor:pointer;
+  margin-left:60px;
+  outline:none;
+  border:none;
+  &:hover {
+    background-color: darken(@RED_PURE, 10%)
+  }
+  &:active {
+    background-color: darken(@RED_PURE, 20%)
+  }
+  @media (max-width: 1024px) {
+    display:none;
+  }
+}
+
+.mobile-button {
+  margin:0;
+  margin-top:7px;
+  margin-bottom: 7px;
+  display:none;
+  @media (max-width: 1024px) {
+    display:block!important;
+  }
+}
+
+.top-board {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid @GRAY_BACKGROUND;
+
+  span {
+    padding-left:10px;
+    color: red;
+  }
+}

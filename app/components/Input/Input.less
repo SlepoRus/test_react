@@ -1,0 +1,62 @@
+.input {
+  margin-top:5px;
+  margin-bottom: 5px;
+  padding-right:40px;
+  @media (max-width: 1024px) {
+    padding:0;
+  }
+  input[type=text],textarea, select {
+    border-radius: 4px;
+    border:1px solid gray;
+    padding:4px;
+    font-size: 12px;
+  }
+  .custom-file-upload {
+    border-radius: 4px;
+    border: 1px solid gray;
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: normal;
+    &:hover {
+      background-color: #EEE;
+    }
+    &:active {
+      background-color: #DDD;
+    }
+  }
+  input[type="file"] {
+    display: none;
+  }
+  label {
+    display:block;
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  input[type=text] {
+    width:100%;
+  }
+
+  textarea {
+    min-width: 350px;
+    box-sizing: border-box;
+    @media (max-width: 768) {
+      min-width: 250px;
+    }
+  }
+  div {
+    margin:4px;
+    img {
+      vertical-align: middle;
+    }
+    span {
+      vertical-align: middle;
+      cursor:pointer;
+      font-size:11px;
+      padding-left:4px;
+    }
+  }
+
+}

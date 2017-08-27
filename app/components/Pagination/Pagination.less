@@ -1,0 +1,19 @@
+@import url('../../styles/colors.less');
+@import url('../../styles/mixins.less');
+
+.pages-list {
+  margin-top:17px;
+  span {
+    padding:4px 8px;
+    background-color: @GRAY_BACKGROUND;
+    &:hover {
+      cursor: pointer;
+      color:white;
+      background-color: @RED_BLOCK;
+    }
+  }
+  .active {
+    color:white;
+    background-color: @RED_BLOCK;
+  }
+}

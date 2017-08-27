@@ -1,0 +1,39 @@
+@import url('../../styles/colors.less');
+@import url('../../styles/mixins.less');
+
+.mini-menu {
+  span {
+    width:20px;
+    font-size: 20px;
+    color: lighten(blue, 20%);
+    font-weight: bold;
+    vertical-align: super;
+    &:hover + .hidden-menu {
+      display:block;
+    }
+
+  }
+  .hidden-menu {
+    padding:5px;
+    display:none;
+    position:absolute;
+    right:40px;
+    margin-top:-26px;
+    margin-right:14px;
+    background-color:lighten(@GRAY_BACKGROUND, 10%);
+    div {
+      font-size: 13px;
+      text-align: right;
+      padding:2px;
+      color: @GRAY_TEXT;
+      &:hover {
+        cursor:pointer;
+        color: lighten(@GRAY_TEXT, 20%)
+      }
+    }
+    &:hover {
+      display:block;
+    }
+
+  }
+}
